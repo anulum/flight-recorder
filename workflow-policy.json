@@ -1,0 +1,294 @@
+{
+  "version": 2,
+  "coordinator": "ci.yml",
+  "required_gate": "required",
+  "required_categories": {
+    "quality": 2,
+    "tests": 4,
+    "docs": 9,
+    "security": 8
+  },
+  "maximum_lines": 1000,
+  "maximum_bytes": 102400,
+  "jobs": [
+    {
+      "workflow": "ci.yml",
+      "job": "docs",
+      "category": 9,
+      "owner": "ANULUM maintainers",
+      "kind": "aggregate"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "docs_main",
+      "category": 9,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "quality",
+      "category": 2,
+      "owner": "ANULUM maintainers",
+      "kind": "aggregate"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "quality_hooks",
+      "category": 2,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "quality_main",
+      "category": 2,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "required",
+      "category": 1,
+      "owner": "ANULUM maintainers",
+      "kind": "aggregate"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "aggregate"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_audit",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_codeql",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_sbom",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_scorecard",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "tests",
+      "category": 4,
+      "owner": "ANULUM maintainers",
+      "kind": "aggregate"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "tests_main",
+      "category": 4,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "codeql.yml",
+      "job": "analysis",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "docs.yml",
+      "job": "documentation",
+      "category": 9,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "pre-commit.yml",
+      "job": "hooks",
+      "category": 2,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "quality.yml",
+      "job": "hooks",
+      "category": 2,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "quality.yml",
+      "job": "quality",
+      "category": 2,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "sbom.yml",
+      "job": "sbom",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "scorecard.yml",
+      "job": "local-supply-chain",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "security-audit.yml",
+      "job": "audit",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "security-audit.yml",
+      "job": "codeql",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "security-audit.yml",
+      "job": "sbom",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "security-audit.yml",
+      "job": "scorecard",
+      "category": 8,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    },
+    {
+      "workflow": "tests.yml",
+      "job": "infrastructure",
+      "category": 4,
+      "owner": "ANULUM maintainers",
+      "kind": "native"
+    }
+  ],
+  "workflow_sha256": {
+    "ci.yml": "8d5d498ffb9d6159c4e3ab1c34176e3cdb347dfbdcb98e4a31095993fa618151",
+    "codeql.yml": "4638df218a927c268ee84315775a3d779aa68aecec75c0f74b2240e4da2356bb",
+    "docs.yml": "9252a46b057e86efc6fa7ffc51652c56a03184e9bfa07e304b3c6170285c754a",
+    "pre-commit.yml": "8453a1de69ea75ae40027a7b17aa2dddb4ad5bae59f0e172a0fc61df5edb1564",
+    "quality.yml": "82dddbd856cd491d00a7d8b0f50e2a9012951df57f328fdf74ffd8b498c2ab41",
+    "sbom.yml": "d41a53dbcc704b7af0356c51885c029f5239e085f6328a4c742968ff9480418f",
+    "scorecard.yml": "d2695970378a74665550b2c0de3a0290c508a673b652d90f7e78fc0e72ca14cf",
+    "security-audit.yml": "cb31bba9683dd757bcf3e012fc38e1e34bdf9c427ff8e644d898e09b38c90eda",
+    "tests.yml": "d47bf469ad1206cb64be1e5ceb02882a6504cf36bb11ffff8d4421dad3ad0c6d"
+  },
+  "provenance_sha256": "5df67d3aeed67ac80cefda909872488179883e8ed11f1c5a27dd108d3febde80",
+  "category_members": {
+    "quality": [
+      "quality_main",
+      "quality_hooks"
+    ],
+    "tests": [
+      "tests_main"
+    ],
+    "docs": [
+      "docs_main"
+    ],
+    "security": [
+      "security_audit",
+      "security_codeql",
+      "security_sbom",
+      "security_scorecard"
+    ]
+  },
+  "composed_jobs": [
+    {
+      "workflow": "ci.yml",
+      "job": "quality_main",
+      "source_workflow": "quality.yml",
+      "source_job": "quality"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "quality_hooks",
+      "source_workflow": "pre-commit.yml",
+      "source_job": "hooks"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "tests_main",
+      "source_workflow": "tests.yml",
+      "source_job": "infrastructure"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "docs_main",
+      "source_workflow": "docs.yml",
+      "source_job": "documentation"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_audit",
+      "source_workflow": "security-audit.yml",
+      "source_job": "audit"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_codeql",
+      "source_workflow": "codeql.yml",
+      "source_job": "analysis"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_sbom",
+      "source_workflow": "sbom.yml",
+      "source_job": "sbom"
+    },
+    {
+      "workflow": "ci.yml",
+      "job": "security_scorecard",
+      "source_workflow": "scorecard.yml",
+      "source_job": "local-supply-chain"
+    },
+    {
+      "workflow": "quality.yml",
+      "job": "hooks",
+      "source_workflow": "pre-commit.yml",
+      "source_job": "hooks"
+    },
+    {
+      "workflow": "security-audit.yml",
+      "job": "codeql",
+      "source_workflow": "codeql.yml",
+      "source_job": "analysis"
+    },
+    {
+      "workflow": "security-audit.yml",
+      "job": "sbom",
+      "source_workflow": "sbom.yml",
+      "source_job": "sbom"
+    },
+    {
+      "workflow": "security-audit.yml",
+      "job": "scorecard",
+      "source_workflow": "scorecard.yml",
+      "source_job": "local-supply-chain"
+    }
+  ]
+}

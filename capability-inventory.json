@@ -1,0 +1,12 @@
+{
+  "capabilities": [],
+  "claims": [],
+  "evidence_maturity": "architecture_only",
+  "lifecycle": "local_scaffold",
+  "qualified_owned_schema_ids": [],
+  "repository_name": "FLIGHT-RECORDER",
+  "source_metadata": {
+    "path": "repository-domain.json",
+    "sha256": "ead19ceccf93930cbf5d70d6dfd073fef88ba00afead8417fab357aac2288adf"
+  }
+}
