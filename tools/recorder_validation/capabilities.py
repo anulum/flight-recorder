@@ -36,7 +36,7 @@ def inventory_bytes(raw_metadata: bytes) -> bytes:
         json.dumps(
             {
                 "repository_name": "FLIGHT-RECORDER",
-                "lifecycle": "local_scaffold",
+                "lifecycle": "public_repository",
                 "evidence_maturity": "architecture_only",
                 "capabilities": [],
                 "claims": [],

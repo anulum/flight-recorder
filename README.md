@@ -12,6 +12,8 @@ FLIGHT-RECORDER — repository governance and provenance
 
 FLIGHT-RECORDER defines a boundary for bounded event capture, surviving checkpoints and gap-honest reconstruction. The current implementation provides repository validation tooling. Capture simulation, SystemVerilog instrumentation, segment verification, offload, reconstruction and export remain planned; no recording runtime or qualified device capability is installed.
 
+FLIGHT-RECORDER is part of the **SC Neuromorphic Computing Systems** group (SC-NEUROMORPHIC-COMPUTING-SYSTEMS). The [group and project map](https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md) shows the whole programme and where this repository sits in it.
+
 The local metadata explicitly records `local_scaffold`, `architecture_only`, empty capabilities, claims and qualified schemas. The planned identifier `flight_recorder.segment.v1` is a declaration, not a registered or accepted evidence format.
 
 ## Validate repository metadata

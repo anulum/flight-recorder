@@ -17,7 +17,7 @@ from recorder_validation.inputs import read_file, read_json
 from recorder_validation.report import Finding, Refusal, Report
 
 # Reviewed independently of the descriptor. Policy updates require code review.
-SCHEMA_SHA256 = "213f3f104cea392066740afbe1da082dfd4eb1c4b68f168caa23ee1e11e84a99"
+SCHEMA_SHA256 = "2419be3f091c0d1c161266e63e1ea625bf5a1cc1f504c597fd80762837a2574e"
 SCHEMA_PATH = "schemas/repository-domain.schema.json"
 METADATA_PATH = "repository-domain.json"
 
